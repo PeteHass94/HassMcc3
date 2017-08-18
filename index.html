@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hassard McClements Limited</title>
+    <!-- CSS -->
+    <link href="./Resources/CSS/reset.css" type="text/css" rel="stylesheet">
+    <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
+    <link href='css/bootstrap.css' rel='stylesheet' />
+    <script type="text/javascript" src="./Resources/js/main.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Quattrocento:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+            <span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+            <span id="open_closed"></span>
+            <script type="text/javascript">window.onload = open_closed('day_hour');</script>
+    </header>
+    <nav id="hidden">
+      <div class="menu">
+          <ul>
+            <li class="openTab"><a href="#Home" ><i class="fa fa-home" aria-hidden="true"></i><p>Home</p></a></li>
+            <li><a href="#Services"><i class="fa fa-calculator" aria-hidden="true"></i><p>Services</p></a></li>
+            <li><a href="#Staff"><i class="fa fa-users" aria-hidden="true"></i><p>Staff</p></a></li>
+            <li><a href="#Contact"><i class="fa fa-address-book" aria-hidden="true"></i><p>Contact Us</p></a></li>
+            <li><a href="#More"><i class="fa fa-info-circle" aria-hidden="true"></i><p>More Info</p></a></li>
+          </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container" id="intro">
+        <div class="card" id="card">
+          <!--Business card
+          <a id="jumbotron" href="#"></a> -->
+        </div>
+        <div class="sidebar">
+          <div class="selectBar">
+            <button class="js-menu hamb" type="button">
+              <span class="bar"></span>
+            </button>
+            <span id="menuComment">Display Menu</span>
+          </div>
+            <a href="https://www.charteredaccountants.ie/" target="_blank"><img src="./Resources/images/CA-Ireland-Logo.png" target="_blank" alt=""></a>
+        </div>
+      </div>
+
+        <div class="container information">
+          <div class="left mainEmail">
+            <a  href="mailto:accounts@hassardmcc.co.uk?Subject=From%20Website" target="_top">
+              <span class="btn" id="email">Email: accounts@hassardmcc.co.uk</span>
+            </a>
+            <a>
+            <span class="btn" id="tel">Tel: 028 6632 0555</span>
+            </a>
+          </div>
+          <div class="center mainAddress">
+            <div class="address">
+              <h3 id=address>32 East Bridge Street <br />Enniskillen<br/>County Fermanagh<br/>Northern Ireland<br/>BT74 7BT</h3>
+            </div>
+            <div class="maps">
+              <a class="bttn"
+                href="https://www.google.com/maps/place/Hassard+McClements+Ltd/@54.3439901,-7.6376095,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x6bb5273afacf9fc3!8m2!3d54.3439901!4d-7.6354208"
+                target="_blank"><span>
+                <i class="fa fa-map-marker" aria-hidden="true"></i><br />Map
+              </span></a>
+              <a class="bttn"
+                href="https://www.google.co.uk/maps/@54.3439488,-7.6353581,3a,83.3y,312.9h,81.4t/data=!3m6!1e1!3m4!1s1H78Wv1YJNdr2rPtgXsnvA!2e0!7i13312!8i6656"
+                  target="_blank"><span>
+                <i class="fa fa-street-view" aria-hidden="true"></i><br/>streetView
+              </span></a>
+            </div>
+          </div>
+          <!-- <div class="right phone">
+            <span class="btn" id="tel">Tel: 028 6632 0555</span>
+          </div> -->
+        </div>
+
+    </main>
+    <footer>
+      <p>&copy 2017 Hassard McClements Limited, Chartered Accountants and Registered Auditiors</p>
+      <ul>
+        <li><a href="https://www.charteredaccountants.ie/" target="_blank">Chartered Accountants Ireland</a></li>
+        <li><a href="mailto:accounts@hassardmcc.co.uk?Subject=From%20Website">Email</a></li>
+        <li><a href="tel:02866320555">Phone</a></li>
+      </ul>
+    </footer>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./Resources/js/main.js"></script>
+  </body>
+</html>
