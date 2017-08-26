@@ -6,9 +6,10 @@
     <title>Hassard McClements Limited</title>
     <!-- CSS -->
     <link href="./Resources/CSS/reset.css" type="text/css" rel="stylesheet">
-    <link href='./Resources/CSS/bootstrap.css' rel='stylesheet' />
+    <link href="./Resources/CSS/bootstrap.css" rel='stylesheet' />
     <link href="./Resources/CSS/style.css" type="text/css" rel="stylesheet">
-    <link href='css/bootstrap.css' rel='stylesheet' />
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Quattrocento:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet" />
@@ -18,35 +19,51 @@
   </head>
   <body>
     <header>
+      <div class="nameAddress">
+        <h1 id="name">Hassard McClements Limited</h1>
+        <h1 id="address">32 East Bridge Street, Enniskillen, BT74 7BT</h1>
+      </div>
+      <div class="officeDetails">
+        <span id="open_closed"></span>
+        <script type="text/javascript">window.onload = open_closed('open_closed');</script>
+        <a href="#"><span id="contact_now phone"></span></a>
+        <a href="#"><span id="contact_now email"></span></a>
 
+      </div>
     </header>
+
     <main id="Home">
-      <div class="container">
-        <div class="leftSquare">
-          <span id="homeBackground"></span>
-        </div>
-        <div class="centerSquare">
-          <span id="homeBackground">
-            <div class="logoCard">
+      <span class="FileTabs" id="HomeTab"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><p>Home</p></a>
+      </span>
+      <img src="./Resources/images/icon.png" alt="">
+      <div class="centerSquare">
+        <span id="homeBackground">
+          <div class="logoCard">
 
-            </div>
-            <div class="contact">
-              <a href="#"><span><i></i><h1></h1></span></a>
-              <a href="#"><span><i></i><h1></h1></span></a>
-            </div>
-          </span>
-        </div>
-        <div class="rightSquare">
-          <span id="homeBackground"></span>
-        </div>
-
-
+          </div>
+          <div class="contact">
+            <a href="#"><span><i></i><h1></h1></span></a>
+            <a href="#"><span><i></i><h1></h1></span></a>
+          </div>
+        </span>
       </div>
 
     </main>
     <main id="Services">
 
     </main>
+    <main id="Staff">
+
+    </main>
+    <main id="Contact Us">
+
+    </main>
+    <main id="More">
+
+    </main>
+
+    <span>
+    </span>
     <footer>
 
     </footer>

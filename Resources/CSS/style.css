@@ -34,7 +34,7 @@ google api key AIzaSyCs6rT_VVjyfX5dBnxWY5XXKQyb8LBXkvE
 html {
   font-size: 16px;
 }
-
+/*body */
 body {
   display: flex;
   flex-direction: column;
@@ -45,6 +45,30 @@ body {
 body {
   background-color: #E3E2DF;
 }
+/*header */
+header {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  background-color: #00165A;
+  color: #FC624D;
+}
+header .nameAddress {
+  display: inline-flex;
+}
+
+header .nameAddress h1#name {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+header .nameAddress h1#address {
+  margin: 0 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+header .officeDetails
+
 /* */
 @keyframes slideDownFromTop {
   0% {
@@ -66,46 +90,6 @@ body {
   height: 100%;
   width: 100%;
 }
-
-
-/* */
-.leftSquare, .rightSquare, .centerSquare {
-  -webkit-animation:1s ease-out 1s 1 slideDownFromTop;
-  animation: 1s ease-out 1s 1 slideDownFromTop;
-}
-
-/* home background*/
-.leftSquare span#homeBackground {
-  position: absolute;
-  background-color: #800020;
-  height: 25%;
-  width: 30%;
-  bottom: 0;
-  left:0;
-  z-index: -1;
-}
-.rightSquare span#homeBackground {
-  background-color: #002080;
-  position: absolute;
-  height: 25%;
-  width: 30%;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-/* home center */
-.centerSquare span#homeBackground {
-  background-color: #FFFFFF;
-  border: 3px solid #800020;
-  position: absolute;
-  height: 75%;
-  width: 80%;
-  top: 12.5%;
-  left: 10%;
-  z-index: 1;
-}
-
 
 
 .centerSquare {
