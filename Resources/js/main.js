@@ -1,23 +1,22 @@
-var day_hour =[];
-
-function open_closed(day_hour)
+function opening(id)
 {
         date = new Date;
-        var day_hour = [date.getDay(),date.getHours()];
+        var day = date.getDay();
+        var hour =date.getHours();
         openTimes = new Array('9', '10', '11', '12', '14', '15', '16');
         var message = "Office is ";
         var note = "Closed";
         var openColor = '#FF4545';
         for (var i = 0; i<7; i++) {
-          if (day_hour[0]>0 && day_hour[0] < 6)
+          if (day>0 && day[0] < 6)
           {
-            if (day_hour[1] == openTimes[i])
+            if (hour == openTimes[i])
             {
               openColor = '#3CA619';
               note = "Open";
               break;
             }
-            else if (day_hour[1] == '13' )  {
+            else if (hour == '13' )  {
               openColor = '#FCA7A7';
               note = "Closed for Lunch";
               break;
@@ -26,9 +25,17 @@ function open_closed(day_hour)
             }
           }
         }
+        if (note === "Open") {
+          document.getElementById('phone').style.display = "flex";
+          document.getElementById('email').style.display = "none";
+        }
+        else {
+          document.getElementById('phone').style.display = "none";
+          document.getElementById('email').style.display = "flex";
+        }
         fullMessage = message + note;
-        document.getElementById('open_closed').innerHTML = fullMessage;
-        setTimeout('open_closed("'+day_hour+'");','1000');
-        document.getElementById('open_closed').style.color = openColor;
+        document.getElementById(id).innerHTML = fullMessage;
+        document.getElementById(id).style.color = openColor;
+        setTimeout('opening("'+id+'");','1000');
         return true;
 }

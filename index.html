@@ -16,6 +16,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Icon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- javascript -->
+    <script type="text/javascript" src="./Resources/js/main.js"></script>
   </head>
   <body>
     <header>
@@ -25,19 +27,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       </div>
       <div class="officeDetails">
         <span id="open_closed"></span>
-        <script type="text/javascript">window.onload = open_closed('open_closed');</script>
-        <a href="#"><span id="contact_now phone"></span></a>
-        <a href="#"><span id="contact_now email"></span></a>
-
+        <a href="#"id="phone"><span><i class="fa fa-phone" aria-hidden="true"></i>: Phone us</span></a>
+        <a href="#"id="email"><span><i class="fa fa-envelope" aria-hidden="true"></i>: Email us</span></a>
+        <script type="text/javascript">window.onload = opening('open_closed');</script>
       </div>
     </header>
 
+    <span class="FileTabs" id="HomeTab">
+      <a href="#"><i class="fa fa-home" aria-hidden="true"></i><p>Home</p></a>
+    </span>
     <main id="Home">
-      <span class="FileTabs" id="HomeTab"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><p>Home</p></a>
-      </span>
-      <img src="./Resources/images/icon.png" alt="">
-      <div class="centerSquare">
-        <span id="homeBackground">
+      <div class="container">
           <div class="logoCard">
 
           </div>
@@ -45,7 +45,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
             <a href="#"><span><i></i><h1></h1></span></a>
             <a href="#"><span><i></i><h1></h1></span></a>
           </div>
-        </span>
       </div>
 
     </main>

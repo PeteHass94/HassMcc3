@@ -50,11 +50,14 @@ header {
   padding: 1rem 0;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
   background-color: #00165A;
   color: #FC624D;
 }
 header .nameAddress {
   display: inline-flex;
+  align-items: center;
 }
 
 header .nameAddress h1#name {
@@ -67,7 +70,47 @@ header .nameAddress h1#address {
   font-size: 1rem;
   line-height: 2rem;
 }
-header .officeDetails
+header .officeDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+header #open_closed {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* email and phone links */
+#phone, #email {
+  display: none;
+  padding: 1rem;
+  border: 2px solid #FC624D;
+  background-color: #800020;
+  color: #fff;
+}
+.FileTabs {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+}
+.FileTabs a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  width: 7rem;
+  border-top-left-radius:2em;
+  border-top-right-radius:2em;
+  color: #ffffff;
+}
+.FileTabs p {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0.1rem;
+}
 
 /* */
 @keyframes slideDownFromTop {
@@ -78,26 +121,44 @@ header .officeDetails
     transform: translateY(0%);
   }
 }
-/* */
+/*main */
+main {
+    margin: 0 2rem;
+    width: 95%;
+    border-radius: 0.3rem;
+    height: 100vh;
+}
+
+
+
+
+
+#HomeTab {
+
+}
+
+#HomeTab a{
+  background-color: #FC624D;
+  border: 2px solid #FC624D;
+  margin-left: 1rem;
+}
+
+
 #Home {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  background-color: #FC624D;
+  border: 2px solid #FC624D;
+
+
 }
 .container {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-
-.centerSquare {
-
-}
-.centerSquare img {
-  max-height: 50rem;
-}
 .logoCard {
   border: 3px solid #00165A;
   height: 20.5rem;
@@ -106,4 +167,5 @@ header .officeDetails
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: auto;
 }
